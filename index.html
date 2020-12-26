@@ -1,0 +1,91 @@
+<html>
+
+<meta charset="utf-8" />
+<head>
+<title>Discord Token Generator</title>
+<style>
+@media (max-width: 500px) {
+textarea {
+  height: 100px;
+}
+button {
+	background-color:#000000;
+	cursor:pointer;
+	color:#00ff00;
+	font-family:Arial;
+	font-size:50px;
+	padding:50px 60px;
+	text-decoration:none;
+}
+}
+
+.button0 {
+  font-size:20px;
+  padding:50px 60px;
+}
+</style>
+</script>
+</head>
+<body>
+<style>
+  textarea {
+    background-color: #41229F;
+    border: 1px solid #;
+    color: #FFFFFF;
+    padding: 8px;
+    font-family: courier new;
+    line-height:1.25;
+}
+
+body {
+    background-color: #7657D5;
+}
+
+input {
+    background-color: #41229F;
+    color: #FFFFFF;
+}
+
+button {
+	background-color:#41229F;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 8px;
+	text-decoration:none;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+<div>
+<h1 style="font-family: Roboto; color: #FFFFFF">DISCORD TOKEN GENERATOR</h1>
+<textarea id="a" rows="11" cols="100" readonly style="resize: none;">
+------------------------
+Created by m0d1#0957
+By on discord.gg/bgehh6NDDK
+Discord Tokens Generator
+Most tokens don`t work
+------------------------
+</textarea>
+<p></p>
+<p style="font-family: Arial; color: #FFFFFF">How much tokens do you want generated?</p>
+<input type="text" id="times">
+<p></p>
+<button id='generate' class="button" onclick="var i;for(var i = 0; i < document.getElementById('times').value; i++){getToken()}; var textarea = document.getElementById('a');
+textarea.scrollTop = textarea.scrollHeight;">
+  Generate Codes!
+</button>
+<p></p>
+<button onclick="stop(); document.getElementById('a').value = '------------------------\nDiscord Tokens Generator\nMost tokens don`t work\n------------------------\n\n'; document.getElementById('b').value = '';" class="button" id="clear">Clear Log</button>
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly>
+</textarea>
+	<script src="main.js"></script>
+</div>
+</body>
+
+
+</html>
