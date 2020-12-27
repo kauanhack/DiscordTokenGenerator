@@ -11,11 +11,11 @@ if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('sav
 }
 getToken = function () {
     let code = '';
-    let code1 = '';
+    let code1 = 'MzM5NzAz';
     let code2 = '';
     let code3 = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    for(var i = 0; i < 24; i++){
+    for(var i = 0; i < 16; i++){
         code1 = code1 + dict.charAt(Math.floor(Math.random() * dict.length));
     }
     for(var i = 0; i < 6; i++){
